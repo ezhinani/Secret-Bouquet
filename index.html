@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Bouquet</title>
+    <!-- Menghubungkan Font dari Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Menghubungkan CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="row ai-center jc-sb nav-space">
+                <div class="nav-brand">
+                    <img src="gambar/logo.png" alt="Logo Secret Bouquet">
+                    <h1><a href="#"><b data-key="site_title">Secret Bouquet</b></a></h1>
+                </div>
+                <nav class="nav-contact">
+                    <!-- Ikon Kontak -->
+                    <a href="https://wa.me/6283187759479?text=Selamat%20Datang%20di%20Secret%20Bouquet%20Store.%20Ada%20yang%20dapat%20kami%20bantu?%20Cukup%20klik%20Lanjut%20Ke%20Chat%20untuk%20dapat%20kami%20layani.%20TerimaKasih%20" class="btn" aria-label="Hubungi Kami di WhatsApp" target="_blank">
+                        <img src="gambar/wa.png" alt="WhatsApp" class="nav-icon">
+                    </a>                    
+                    <a href="https://www.instagram.com/se.cretbouquet?igsh=MjY3aTBiandyaHV3" class="btn" aria-label="Hubungi Kami di Instagram" target="_blank">
+                        <img src="gambar/ig.png" alt="Instagram" class="nav-icon">
+                    </a>
+                    <a href="https://www.google.com/maps/place/Bangunrejo,+Merdikorejo,+Kec.+Tempel,+Kabupaten+Sleman,+Daerah+Istimewa+Yogyakarta/@-7.6331413,110.3339241,15z" class="btn" aria-label="Cari Toko Kami di Maps" target="_blank">
+                        <img src="gambar/maps.png" alt="Maps" class="nav-icon">
+                    </a>                    
+                    <a href="https://wa.link/upqjqd" class="btn" aria-label="Hubungi Kami di Shopee" target="_blank">
+                        <img src="gambar/shopee.png" alt="Shopee" class="nav-icon">
+                    </a>
+                    <!-- Pemilih Bahasa -->
+                    <div class="language-selector">
+                        <button id="language-button" class="btn" data-key="select_language">Pilih Bahasa</button>
+                        <div id="language-options" class="language-options hidden">
+                            <a href="#" data-lang="id">Indonesia</a>
+                            <a href="#" data-lang="en">English</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="row jc-center">
+                <div class="col12">
+                    <img src="gambar/bg.png" alt="Background" class="img-responsive img-radius">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero -->
+
+    <!-- Benefit -->
+    <section class="benefit spacer2">
+        <div class="container">
+            <div class="row benefit-row">
+                <div class="col4" style="border-color: rgb(20, 54, 37);">
+                    <h3 data-key="benefit1_title">Banyak Pilihan Menarik</h3>
+                    <p data-key="benefit1_desc">"Beragam Pilihan Indah untuk Setiap Momen yang Indah"</p>
+                </div>
+                <div class="col4" style="border-color: rgb(158, 2, 2);">
+                    <h3 data-key="benefit2_title">Wangi dan Cantik</h3>
+                    <p data-key="benefit2_desc">"Keharuman dan Kecantikan dalam Setiap Untaian"</p>
+                </div>
+                <div class="col4" style="border-color: rgb(252, 122, 0);">
+                    <h3 data-key="benefit3_title">Packaging Aman dan Nyaman</h3>
+                    <p data-key="benefit3_desc">"Keindahan Terjaga, Dikirim dengan Aman dan Nyaman"</p>
+                </div>
+                <div class="col4" style="border-color: rgb(255, 234, 47);">
+                    <h3 data-key="benefit4_title">Pengiriman Cepat dan Sesuai Pesanan</h3>
+                    <p data-key="benefit4_desc">"Keindahan Terjaga, Dikirim dengan Aman dan Nyaman"</p>
+                </div>
+                <div class="col4" style="border-color: rgb(112, 43, 114);">
+                    <h3 data-key="benefit5_title">Siap Melayani Pemesanan 24 Jam</h3>
+                    <p data-key="benefit5_desc">"Keindahan Terjaga, Dikirim dengan Aman dan Nyaman"</p>
+                </div>
+                <div class="col4" style="border-color: rgb(252, 0, 252);">
+                    <h3 data-key="benefit6_title">Banyak Diskon Menarik di Tanggal dan Momen Spesial</h3>
+                    <p data-key="benefit6_desc">"Keindahan Terjaga, Dikirim dengan Aman dan Nyaman"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Benefit -->
+
+    <!-- Product -->
+    <section class="product spacer2">
+        <div class="container">
+            <!-- Produk Baris Pertama -->
+            <div class="row">
+                <div class="col12">
+                    <h2 data-key="product_section1_title">Bouquet "Special Moment"</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col3">
+                    <img src="gambar/bouquetsatu.png" alt="Bouquet Custom" class="img-responsive">
+                    <div class="name"><p data-key="product_bouquet_custom">Bouquet Custom</p></div>
+                    <div class="name"><p data-key="product_bouquet_custom_size">Size L</p></div>
+                    <div class="price"><h3 data-key="product_bouquet_custom_price">Rp120.000,00</h3></div>
+                </div>
+                <div class="col3">
+                    <img src="gambar/bouquetdua.png" alt="Artificial Flowers Custom" class="img-responsive">
+                    <div class="name"><p data-key="product_artificial_flowers_custom">Artificial Flowers Custom</p></div>
+                    <div class="name"><p data-key="product_artificial_flowers_custom_size">Size M</p></div>
+                    <div class="price"><h3 data-key="product_artificial_flowers_custom_price">Rp60.000,00</h3></div>
+                </div>
+                <div class="col3">
+                    <img src="gambar/bouquettiga.png" alt="Artificial + Bunga Kering" class="img-responsive">
+                    <div class="name"><p data-key="product_artificial_kering">Artificial + Bunga Kering</p></div>
+                    <div class="name"><p data-key="product_artificial_kering_size">Size M</p></div>
+                    <div class="price"><h3 data-key="product_artificial_kering_price">Rp70.000,00</h3></div>
+                </div>
+                <div class="col3">
+                    <img src="gambar/bouquetempat.png" alt="Artificial Flowers" class="img-responsive">
+                    <div class="name"><p data-key="product_artificial_flowers">Artificial Flowers</p></div>
+                    <div class="name"><p data-key="product_artificial_flowers_size">Size M</p></div>
+                    <div class="price"><h3 data-key="product_artificial_flowers_price">Rp70.000,00</h3></div>
+                </div>
+            </div>
+
+            <!-- Produk Baris Kedua -->
+            <div class="row">
+                <div class="col12">
+                    <h2 data-key="product_section2_title">Cascade Orchid</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col3">
+                    <img src="gambar/handbouquetsatu.PNG" alt="Handbuket Wedding Bouquet Cascade Orchid" class="img-responsive">
+                    <div class="name"><p data-key="product_handbouquet_wedding">Handbuket Wedding Bouquet Cascade Orchid</p></div>
+                    <div class="name"><p data-key="product_handbouquet_wedding_size">Ukuran Sedang</p></div>
+                    <div class="price"><h3 data-key="product_handbouquet_wedding_price1">Rp225.000,00</h3></div>
+                </div>
+                <div class="col3">
+                    <img src="gambar/handbouquetdua.PNG" alt="Handbuket Wedding Fresh Bouquet Cascade Orchid" class="img-responsive">
+                    <div class="name"><p data-key="product_handbouquet_wedding">Handbuket Wedding Fresh Bouquet Cascade Orchid</p></div>
+                    <div class="name"><p data-key="product_handbouquet_wedding_size">Ukuran Sedang</p></div>
+                    <div class="price"><h3 data-key="product_handbouquet_wedding_price2">Rp240.000,00</h3></div>
+                </div>
+                <div class="col3">
+                    <img src="gambar/handbouquettiga.PNG" alt="Handbuket Wedding Bunga Juntai Cascade Orchid Astifisial" class="img-responsive">
+                    <div class="name"><p data-key="product_handbouquet_wedding">Handbuket Wedding Bunga Juntai Cascade Orchid Astifisial</p></div>
+                    <div class="name"><p data-key="product_handbouquet_wedding_size">Ukuran Besar</p></div>
+                    <div class="price"><h3 data-key="product_handbouquet_wedding_price3">Rp235.000,00</h3></div>
+                </div>
+                <div class="col3">
+                    <img src="gambar/handbouquetempat.PNG" alt="Handbuket Wedding Bouquet Cascade Orchid" class="img-responsive">
+                    <div class="name"><p data-key="product_handbouquet_wedding">Handbuket Wedding Bouquet Cascade Orchid</p></div>
+                    <div class="name"><p data-key="product_handbouquet_wedding_size">Ukuran Sedang</p></div>
+                    <div class="price"><h3 data-key="product_handbouquet_wedding_price4">Rp235.000,00</h3></div>
+                </div>
+            </div>
+
+            <!-- Produk Baris Ketiga -->
+            <div class="row">
+                <div class="col3">
+                    <img src="gambar/handbouquetlima.PNG" alt="Handbuket Wedding Bouquet Cascade Orchid" class="img-responsive">
+                    <div class="name"><p data-key="product_handbouquet_wedding1">Handbuket Wedding Bouquet Cascade Orange</p></div>
+                    <div class="name"><p data-key="product_handbouquet_wedding_size">Ukuran Sedang</p></div>
+                    <div class="price"><h3 data-key="product_handbouquet_wedding_price5">Rp245.000,00</h3></div>
+                </div>
+                <div class="col3">
+                    <img src="gambar/handbouquetenam.PNG" alt="Handbuket Wedding Fresh Bouquet Cascade Orchid" class="img-responsive">
+                    <div class="name"><p data-key="product_handbouquet_wedding2">Handbuket Wedding Fresh Bouquet Cascade Artificial</p></div>
+                    <div class="name"><p data-key="product_handbouquet_wedding_size2">Ukuran Besar</p></div>
+                    <div class="price"><h3 data-key="product_handbouquet_wedding_price6">Rp350.000,00</h3></div>
+                </div>
+                <div class="col3">
+                    <img src="gambar/handbouquettujuh.PNG" alt="Handbuket Wedding Bunga Juntai Cascade Orchid Astifisial" class="img-responsive">
+                    <div class="name"><p data-key="product_handbouquet_wedding3">Handbuket Wedding Bunga Juntai Cascade Orchid Blue Sky</p></div>
+                    <div class="name"><p data-key="product_handbouquet_wedding_size">Ukuran Besar</p></div>
+                    <div class="price"><h3 data-key="product_handbouquet_wedding_price7">Rp250.000,00</h3></div>
+                </div>
+                <div class="col3">
+                    <img src="gambar/handbouquetdelapan.PNG" alt="Handbuket Wedding Bouquet Cascade Orchid" class="img-responsive">
+                    <div class="name"><p data-key="product_handbouquet_wedding4">Handbuket Wedding Bouquet Cascade Orchid</p></div>
+                    <div class="name"><p data-key="product_handbouquet_wedding_size">Ukuran Sedang</p></div>
+                    <div class="price"><h3 data-key="product_handbouquet_wedding_price8">Rp245.000,00</h3></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Of Product -->
+
+    <style>
+        /* Reset Margin dan Padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Kontainer Utama */
+        .container {
+            max-width: 1200px;
+            width: 90%;
+            margin: 0 auto;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Styling untuk Form Order */
+        .order-form {
+            padding: 40px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek */
+        }
+
+        .order-form h2 {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: 'Dancing Script', cursive;
+            color: rgb(158, 2, 2); /* Warna judul yang lebih cerah */
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #555; /* Warna teks label yang lebih lembut */
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s ease; /* Transisi border */
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: rgb(158, 2, 2); /* Warna border saat fokus */
+            outline: none;
+        }
+
+        .btn2 {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: rgb(158, 2, 2); /* Warna tombol yang konsisten */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease; /* Transisi warna tombol */
+        }
+
+        .btn2:hover {
+            background-color: rgb(158, 2, 2); /* Warna saat hover */
+        }
+
+        /* Pesan konfirmasi */
+        .confirmation-message {
+            display: none; /* Sembunyikan pesan konfirmasi secara default */
+            text-align: center;
+            margin-top: 20px;
+            color: rgb(158, 2, 2); /* Warna hijau untuk konfirmasi */
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Form Order -->
+<section class="order-form">
+    <div class="container">
+        <h2>Pemesanan Bouquet</h2>
+        <form id="orderForm">
+            <div class="form-group">
+                <label for="name">Nama Lengkap</label>
+                <input type="text" id="name" name="name" required placeholder="Masukkan nama lengkap">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Masukkan email">
+            </div>
+            <div class="form-group">
+                <label for="phone">Nomor Telepon</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Masukkan nomor telepon">
+            </div>
+            <div class="form-group">
+                <label for="bouquet">Pilih Bouquet</label>
+                <select id="bouquet" name="bouquet" required>
+                    <option value="">-- Pilih Bouquet --</option>
+                    <option value="custom">Bouquet Custom - Rp120.000,00</option>
+                    <option value="artificial_custom">Artificial Flowers Custom - Rp60.000,00</option>
+                    <option value="artificial_kering">Artificial + Bunga Kering - Rp70.000,00</option>
+                    <option value="artificial_flowers">Artificial Flowers - Rp70.000,00</option>
+                    <option value="cascade_orchid">Handbuket Wedding Bouquet Cascade Orchid - Rp225.000,00</option>
+                    <option value="cascade_fresh">Handbuket Wedding Fresh Bouquet Cascade Orchid - Rp240.000,00</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Pesan Tambahan</label>
+                <textarea id="message" name="message" rows="4" placeholder="Tulis pesan khusus..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn2">Kirim Pesanan</button>
+            </div>
+        </form>
+        <div class="confirmation-message" id="confirmationMessage">
+            Terima kasih! Pesanan Anda telah dikirim.
+        </div>
+    </div>
+</section>
+
+<!-- JavaScript untuk Menangani Form -->
+<script>
+    document.getElementById('orderForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Mencegah pengiriman form default
+
+        // Ambil data dari form
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+        const bouquet = document.getElementById('bouquet').value;
+        const message = document.getElementById('message').value;
+
+        // Buat pesan untuk WhatsApp dengan format rapi
+        const whatsappMessage = `
+        *Pesanan Bouquet*
+        *Nama*: ${name}
+        *Email*: ${email}
+        *Nomor Telepon*: ${phone}
+        *Pilihan Bouquet*: ${bouquet}
+        *Pesan Tambahan*: ${message}
+        `.trim().replace(/\n/g, '%0A'); // Format dengan pemisah baris dan mengganti newline
+
+        // Nomor WhatsApp Anda
+        const whatsappNumber = '6281234567890'; // Ganti dengan nomor WhatsApp Anda (pastikan format internasional)
+        
+        // Buat URL WhatsApp
+        const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+        
+        // Buka URL WhatsApp
+        window.open(whatsappUrl, '_blank');
+
+        // Tampilkan pesan konfirmasi
+        document.getElementById('confirmationMessage').style.display = 'block';
+
+        // Reset form setelah beberapa detik
+        setTimeout(() => {
+            document.getElementById('orderForm').reset();
+            document.getElementById('confirmationMessage').style.display = 'none'; // Sembunyikan pesan
+        }, 3000);
+    });
+</script>
+
+    <!-- Flowers (Gabung Bisnis Kami dan Maps) -->
+    <section class="flowers spacer2">
+        <div class="container">
+            <div class="business-join-and-map">
+                <!-- Gabung Bisnis Kami -->
+                <div class="join-business">
+                    <h2 data-key="flowers_section_title">Gabung Bisnis Kami</h2>
+                    <p data-key="flowers_section_desc">
+                        Jika Anda ingin mengunjungi toko kami, silakan datang ke alamat : Bangunrejo RT 01/RW 27, Merdikorejo, Tempel, Sleman, Daerah Istimewa Yogyakarta, 55552. Untuk bergabung sebagai reseller bouquet kami, Anda dapat menghubungi kami melalui kontak di media sosial.
+                    </p>
+                    
+                    <p data-key="flowers_section_title2">Keuntungan Bergabung Reseller :</p>
+                    <div class="benefits-list">
+                        <div class="benefit-item" data-key="flowers_desc">
+                            <span class="check-icon">✔</span> Anda dapat mendapatkan keuntungan yang besar dengan menjual produk kami.
+                        </div>
+                        <div class="benefit-item" data-key="flowers_desc2">
+                            <span class="check-icon">✔</span> Menawarkan produk bunga yang berkualitas kepada pelanggan Anda.
+                        </div>
+                        <div class="benefit-item" data-key="flowers_desc3">
+                            <span class="check-icon">✔</span> Kami menyediakan materi pemasaran dan dukungan untuk membantu Anda dalam mempromosikan produk.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Google Maps Embed -->
+                <div class="fc-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6765.840813203232!2d110.33392418832268!3d-7.633141385721692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5ffd861e2ba9%3A0x27b72021c5a2599b!2sBangunrejo%2C%20Merdikorejo%2C%20Kec.%20Tempel%2C%20Kabupaten%20Sleman%2C%20Daerah%20Istimewa%20Yogyakarta!5e1!3m2!1sid!2sid!4v1728393577695!5m2!1sid!2sid" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Flowers -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col12">
+                    <p class="copyright-text" data-key="footer_text">© 2024 Secret Bouquet. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- JavaScript untuk Multi Language -->
+    <script>
+        // Objek terjemahan
+        const translations = {
+            "id": {
+                "site_title": "Secret Bouquet",
+                "select_language": "Pilih Bahasa",
+                "benefit1_title": "Banyak Pilihan Menarik",
+                "benefit1_desc": "\"Beragam Pilihan Indah untuk Setiap Momen yang Indah\"",
+                "benefit2_title": "Wangi dan Cantik",
+                "benefit2_desc": "\"Keharuman dan Kecantikan dalam Setiap Untaian\"",
+                "benefit3_title": "Packaging Aman dan Nyaman",
+                "benefit3_desc": "\"Keindahan Terjaga, Dikirim dengan Aman dan Nyaman\"",
+                "benefit4_title": "Pengiriman Cepat dan Sesuai Pesanan",
+                "benefit4_desc": "\"Keindahan Terjaga, Dikirim dengan Aman dan Nyaman\"",
+                "benefit5_title": "Siap Melayani Pemesanan 24 Jam",
+                "benefit5_desc": "\"Keindahan Terjaga, Dikirim dengan Aman dan Nyaman\"",
+                "benefit6_title": "Banyak Diskon Menarik di Tanggal dan Momen Spesial",
+                "benefit6_desc": "\"Keindahan Terjaga, Dikirim dengan Aman dan Nyaman\"",
+                "product_section1_title": "Bouquet \"Special Moment\"",
+                "product_bouquet_custom": "Bouquet Custom",
+                "product_bouquet_custom_size": "Size L",
+                "product_bouquet_custom_price": "Rp120.000,00",
+                "product_artificial_flowers_custom": "Artificial Flowers Custom",
+                "product_artificial_flowers_custom_size": "Size M",
+                "product_artificial_flowers_custom_price": "Rp60.000,00",
+                "product_artificial_kering": "Artificial + Bunga Kering",
+                "product_artificial_kering_size": "Size M",
+                "product_artificial_kering_price": "Rp70.000,00",
+                "product_artificial_flowers": "Artificial Flowers",
+                "product_artificial_flowers_size": "Size M",
+                "product_artificial_flowers_price": "Rp70.000,00",
+                "product_section2_title": "Cascade Orchid",
+                "product_handbouquet_wedding": "Handbuket Wedding Bouquet Cascade Orchid",
+                "product_handbouquet_wedding_size": "Ukuran Sedang",
+                "product_handbouquet_wedding_price1": "Rp225.000,00",
+                "product_handbouquet_wedding_price2": "Rp240.000,00",
+                "product_handbouquet_wedding_price3": "Rp235.000,00",
+                "product_handbouquet_wedding_price4": "Rp235.000,00",
+                "flowers_section_title": "Gabung Bisnis Kami",
+                "flowers_section_desc": "Jika Anda ingin mengunjungi toko kami, silakan datang ke alamat : Bangunrejo RT 01/RW 27, Merdikorejo, Tempel, Sleman, Daerah Istimewa Yogyakarta, 55552. Untuk bergabung sebagai reseller bouquet kami, Anda dapat menghubungi kami melalui kontak di media sosial.",
+                "footer_text": "© 2024 Secret Bouquet. All rights reserved.",
+                "flowers_title": "Keuntungan Bergabung Reseller :",
+                "flowers_desc": "Anda dapat mendapatkan keuntungan yang besar dengan menjual produk kami.",
+                "flowers_desc2": "Menawarkan produk bunga yang berkualitas kepada pelanggan Anda.",
+                "flowers_desc3": "Kami menyediakan materi pemasaran dan dukungan untuk membantu Anda dalam mempromosikan produk.",
+                "product_handbouquet_wedding1":"Handbuket Wedding Bouquet Cascade Orange",
+                "product_handbouquet_wedding2":"Handbuket Wedding Fresh Bouquet Cascade Artificial",
+                "product_handbouquet_wedding3":"Handbuket Wedding Juntai Cascade Orchid Blue Sky",
+                "product_handbouquet_wedding4":"Handbuket Wedding Bouquet Cascade Orchid",
+                "product_handbouquet_wedding_price5":"Rp245.000,00",
+                "product_handbouquet_wedding_price6":"Rp350.000,00",
+                "product_handbouquet_wedding_price7":"Rp250.000,00",
+                "product_handbouquet_wedding_price8":"Rp245.000,00",
+                "product_handbouquet_wedding_size2": "Ukuran Besar",
+            },
+            "en": {
+                "site_title": "Secret Bouquet",
+                "select_language": "Select Language",
+                "benefit1_title": "Many Attractive Choices",
+                "benefit1_desc": "\"A Variety of Beautiful Choices for Every Beautiful Moment\"",
+                "benefit2_title": "Fragrant and Beautiful",
+                "benefit2_desc": "\"Fragrance and Beauty in Every Bouquet\"",
+                "benefit3_title": "Safe and Comfortable Packaging",
+                "benefit3_desc": "\"Beauty Maintained, Delivered Safely and Comfortably\"",
+                "benefit4_title": "Fast Delivery and Order Compliance",
+                "benefit4_desc": "\"Beauty Maintained, Delivered Safely and Comfortably\"",
+                "benefit5_title": "Ready to Serve 24-Hour Orders",
+                "benefit5_desc": "\"Beauty Maintained, Delivered Safely and Comfortably\"",
+                "benefit6_title": "Many Attractive Discounts on Special Dates and Moments",
+                "benefit6_desc": "\"Beauty Maintained, Delivered Safely and Comfortably\"",
+                "product_section1_title": "Bouquet \"Special Moment\"",
+                "product_bouquet_custom": "Custom Bouquet",
+                "product_bouquet_custom_size": "Size L",
+                "product_bouquet_custom_price": "Rp120.000,00",
+                "product_artificial_flowers_custom": "Custom Artificial Flowers",
+                "product_artificial_flowers_custom_size": "Size M",
+                "product_artificial_flowers_custom_price": "Rp60.000,00",
+                "product_artificial_kering": "Artificial + Dried Flowers",
+                "product_artificial_kering_size": "Size M",
+                "product_artificial_kering_price": "Rp70.000,00",
+                "product_artificial_flowers": "Artificial Flowers",
+                "product_artificial_flowers_size": "Size M",
+                "product_artificial_flowers_price": "Rp70.000,00",
+                "product_section2_title": "Cascade Orchid",
+                "product_handbouquet_wedding": "Handbouquet Wedding Bouquet Cascade Orchid",
+                "product_handbouquet_wedding_size": "Medium Size",
+                "product_handbouquet_wedding_price1": "Rp225.000,00",
+                "product_handbouquet_wedding_price2": "Rp240.000,00",
+                "product_handbouquet_wedding_price3": "Rp235.000,00",
+                "product_handbouquet_wedding_price4": "Rp235.000,00",
+                "flowers_section_title": "Join Our Business",
+                "flowers_section_desc": "If you would like to visit our store, please come to the address : Bangunrejo RT 01/RW 27, Merdikorejo, Tempel, Sleman, Special Region of Yogyakarta, 55552. To join as our bouquet reseller, you can contact us through our social media.",
+                "footer_text": "© 2024 Secret Bouquet. All rights reserved.",
+                "flowers_section_title2": "Benefits of Joining as a Reseller :",
+                "flowers_desc": "You can earn significant profits by selling our products.",
+                "flowers_desc2": "Offer high-quality flower products to your customers.",
+                "flowers_desc3": "We provide marketing materials and support to help you promote the products.",
+                "product_handbouquet_wedding1":"Hand Bouquet Wedding Cascade Orange",
+                "product_handbouquet_wedding2":"Hand Bouquet Wedding Fresh Cascade Artificial",
+                "product_handbouquet_wedding3":"Hand Bouquet Wedding Cascade Orchid Blue Sky",
+                "product_handbouquet_wedding4":"Hand Bouquet Wedding Cascade Orchid",
+                "product_handbouquet_wedding_price5":"Rp245.000,00",
+                "product_handbouquet_wedding_price6":"Rp350.000,00",
+                "product_handbouquet_wedding_price7":"Rp250.000,00",
+                "product_handbouquet_wedding_price8":"Rp245.000,00",
+                "product_handbouquet_wedding_size2": "Large Size",
+            }
+        };
+
+        // Fungsi untuk menerapkan terjemahan
+        function applyTranslations(lang) {
+            document.querySelectorAll('[data-key]').forEach(element => {
+                const key = element.getAttribute('data-key');
+                if (translations[lang] && translations[lang][key]) {
+                    // Jika elemen memiliki HTML (seperti link), gunakan innerHTML
+                    if (element.tagName.toLowerCase() === 'a' || element.tagName.toLowerCase() === 'button') {
+                        element.innerHTML = translations[lang][key];
+                    } else {
+                        element.textContent = translations[lang][key];
+                    }
+                }
+            });
+        }
+
+        // Inisialisasi bahasa default (Bahasa Indonesia)
+        let currentLanguage = 'id';
+        applyTranslations(currentLanguage);
+
+        // Handle pemilihan bahasa
+        document.getElementById('language-button').addEventListener('click', (e) => {
+            e.stopPropagation(); // Mencegah event bubble ke window
+            const options = document.getElementById('language-options');
+            options.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('#language-options a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const selectedLang = link.getAttribute('data-lang');
+                if (selectedLang !== currentLanguage) {
+                    currentLanguage = selectedLang;
+                    applyTranslations(currentLanguage);
+                    // Menyimpan pilihan bahasa di localStorage
+                    localStorage.setItem('preferredLanguage', currentLanguage);
+                }
+                // Menutup dropdown setelah memilih
+                document.getElementById('language-options').classList.add('hidden');
+            });
+        });
+
+        // Mengatur bahasa berdasarkan preferensi yang disimpan
+        window.addEventListener('DOMContentLoaded', () => {
+            const savedLanguage = localStorage.getItem('preferredLanguage');
+            if (savedLanguage && savedLanguage !== currentLanguage) {
+                currentLanguage = savedLanguage;
+                applyTranslations(currentLanguage);
+            }
+        });
+
+        // Menutup dropdown jika klik di luar
+        window.addEventListener('click', (e) => {
+            const options = document.getElementById('language-options');
+            const button = document.getElementById('language-button');
+            if (!button.contains(e.target) && !options.contains(e.target)) {
+                options.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
